@@ -1,0 +1,166 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+margin:0;
+padding:0;
+list-style-type:none;
+text-decoration:none;
+box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+     background-color: black;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+h1 {
+    color: rgb(59, 34, 199);
+    font-size: 6.8rem;
+    text-align: center;
+    letter-spacing: .2rem;
+}
+
+.main{
+ background-color: black;
+}
+
+ /* Setting up the information box*/
+.firstContainer{
+    width: 450px;
+    height: 250px;
+    background-color: rgba(41, 34, 148, 0.493);
+    border: 8px solid rgba(18, 211, 76, 0.287);
+    border-radius: 40px;
+    position: absolute;
+    top: 240px;
+    left: 15px;
+    text-align: center;
+}
+
+#monthChoice {
+    padding: 5px 30px 5px 25px;
+    font-size: 1.2rem;
+    border-radius: 10px;    
+}
+
+
+#day {
+    padding: 5.2px 4px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  /* Button layout*/
+#button {
+    padding: 6px 50px 10px 15px;
+    width: 56px;
+    border: 5px solid rgb(139, 47, 47);
+    background-color: black;
+    display: block;
+    font-size: 2.5rem;
+    margin: 30px auto 15px auto;
+    border-radius: 50%;
+    
+  }
+
+.firstContainer p {
+    color: white;
+    font-family: verdana;
+    margin: 20px 0px;
+    font-size: 1.4rem;
+  }
+
+  /* Keeps the content spread out */
+.float{
+    width: 33%;
+    float: left;
+  }
+.horoscope {
+    width: 67%;
+    height: 350px;
+    float: left;
+  }
+  /* Information on Zodiacs */
+.text{
+    width: 51%;
+    border: 8px solid rgba(18, 211, 76, 0.287);
+    background-color: rgba(41, 34, 148, 0.493);
+    height: 350px;
+    float: left;
+    margin: 85px 5px 0px 15px;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 1.1rem;
+    color:white;
+    letter-spacing: .05rem;
+  }
+  
+  /* Image Area */
+.horoscopeImg{
+    width: 40%;
+    height: 300px;
+    float: left;
+  }
+  
+.horoscopeImg img {
+    width: 320px;
+    margin-left: 30px;
+    padding-top: 100px;
+  }
+
+  /* Section to the right*/
+.welcomeArea h4 {
+    font-size: 5.5rem;
+    text-align: center;
+    color:white;
+    margin-top: 130px;
+    display: block;
+  }
+
+  /* DO NOT DISPLAY THE HOROSCOPE AT START */
+.text, .horoscope, .horoscope p {
+    display: none;
+  } 
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
